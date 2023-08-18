@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class InstructorConfig {
 
-    @Bean
+    @Bean(name = "tcUsa")
     Instructors tcUsaInstructors(){
         Instructors tcUsa = new Instructors();
         tcUsa.add(new Instructor(0, "Kelly"));
@@ -18,7 +18,7 @@ public class InstructorConfig {
         return tcUsa;
     }
 
-    @Bean
+    @Bean(name = "tcUk")
     Instructors tcUkInstructors(){
         Instructors tcUk = new Instructors();
         tcUk.add(new Instructor(0, "Scary"));
