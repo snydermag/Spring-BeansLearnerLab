@@ -8,8 +8,12 @@ public class Students extends People<Student>{
         super(students);
     }
 
+    public Students(){
+        this(new Student());
+    }
+
     @Override
     public Iterator<Student> iterator() {
-        return null;
+        return personList.iterator();
     }
 }

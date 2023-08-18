@@ -27,8 +27,8 @@ public class InstructorConfig {
         return tcUk;
     }
 
-    @Bean
-    @Primary
+    @Primary()
+    @Bean(name = "instructors")
     public Instructors instructors(){
         Instructors tcZcw = new Instructors();
         tcZcw.add(new Instructor(0,"Kris"));

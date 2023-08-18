@@ -1,15 +1,17 @@
 package com.example.BeansLearner;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class People<PersonType extends Person> implements Iterable<PersonType>{
 
-    List<PersonType> personList;
-    People(List<PersonType> peeps){
+    List<PersonType> personList = new ArrayList<>();
+
+    public People(List<PersonType> peeps){
         personList = peeps;
     }
 
-    People(PersonType...personTypes){
+    public People(PersonType...personTypes){
         for (PersonType p : personTypes){
             personList.add(p);
         }

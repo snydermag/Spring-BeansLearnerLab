@@ -8,6 +8,10 @@ public class Student extends Person implements Learner{
         super(id, name);
     }
 
+    public Student(){
+        super();
+    }
+
     public void learn(double numberOfHours){
         totalStudyTime += numberOfHours;
     }
