@@ -2,11 +2,11 @@ package com.example.BeansLearner;
 
 public class Person {
 
-    final Long id;
+    final long id;
 
     String name;
 
-    Person(Long id, String name){
+    public Person(long id, String name){
         this.id = id;
         this.name = name;
     }

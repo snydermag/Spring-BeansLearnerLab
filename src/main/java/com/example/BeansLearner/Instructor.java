@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 public class Instructor extends Person implements Teacher{
 
-    Instructor(Long id, String name) {
+    public Instructor(long id, String name) {
         super(id, name);
     }
 
@@ -26,7 +26,5 @@ public class Instructor extends Person implements Teacher{
             learners.forEach(learner -> learner.learn(numberOfHoursPerLearner));
         }
 
-
-
-    };
+    }
 }
